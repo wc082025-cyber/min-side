@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>The Beast Lies Beyond</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="beast">
+      <img src="beastlogo.webp" />
+    </div>
+    <div class="container">
+      <h1>Enter Altar</h1>
+      <p class="restriction">Thy Beast Lieth Beyond</p>
+
+      <form id="passwordform">
+        <label for="password" class="prayer">Sayeth thee prayer</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="only a true beast may enter"
+          required
+        />
+        <button type="submit">Pray</button>
+      </form>
+
+      <p id="message"></p>
+    </div>
+
+    <script>
+      document
+        .getElementById("passwordform")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const input = document.getElementById("password").value;
+          const message = document.getElementById("message");
+
+          const correctPassword = "beast";
+
+          if (input === correctPassword) {
+            message.textContent = "Access granted.";
+            message.style.color = "gray";
+
+            // ✅ Redirect to correct page
+            window.location.href = "welcome.index.html"; // Make sure this file exists
+          } else {
+            message.textContent = "Thy beast art not worthy";
+            message.style.fontSize = "20px";
+            message.style.color = "red";
+            message.style.fontWeight = "bold";
+          }
+        });
+    </script>
+  </body>
+</html>
