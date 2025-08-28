@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>The Beast Lies Beyond</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="main.js"></script>
   </head>
   <body>
     <div class="beast">
@@ -42,8 +43,7 @@
             message.textContent = "Access granted.";
             message.style.color = "gray";
 
-            // ✅ Redirect to correct page
-            window.location.href = "welcome.index.html"; // Make sure this file exists
+            window.location.href = "welcome.index.html";
           } else {
             message.textContent = "Thy beast art not worthy";
             message.style.fontSize = "20px";
@@ -52,6 +52,13 @@
           }
         });
     </script>
+    <div id="gifContainer" class="hidden">
+      <img
+        src="https://media.tenor.com/2fZVZKJZVZMAAAAC/alter-beast-change-fire-transform.gif"
+        alt="Transformation GIF"
+      />
+      <p>Thou art worthy BEAST</p>
+    </div>
   </body>
 </html>
 <!-- general thoughts on the project. 
@@ -78,8 +85,4 @@ A 90´s CEO competing with Nintendo, trying to be the edgy younger brother if yo
 The color palette is carefully chosen by only using colors from the image.
 Harsh contrasts was the way of the decade. Apple had not yet layed down
 the standard for beutiful design, flickering and attention grabbing
-was the way to go.
-
-
-
--->
+was the way to go. -->

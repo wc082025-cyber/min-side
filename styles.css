@@ -40,3 +40,16 @@ h1 {
 .prayer {
   color: rgb(248, 0, 0);
 }
+.hidden {
+  display: none;
+}
+
+#gifcontainer {
+  text-align: center;
+  margin-top: 20px;
+}
+#gifcontainer img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
